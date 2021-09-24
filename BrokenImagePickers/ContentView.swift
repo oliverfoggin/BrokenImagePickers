@@ -16,24 +16,42 @@ struct ContentView: View {
   @State var photoPickerResult: PHPickerResult?
   
   var body: some View {
-    VStack(spacing: 20) {
-      if let image = image {
-        Image(uiImage: image)
-          .centerCropped()
+    NavigationView {
+        VStack(spacing: 20) {
+          Text("""
+Run this app on a device.
+Tap a button to open either the old UIImagePickerViewController or the new PHPickerViewController.
+When you enter into the search it will either crash out of the image picker or display an error.
+""")
+            .multilineTextAlignment(.leading)
+            .padding(.init(top: 0, leading: 30, bottom: 0, trailing: 30))
+          
+          Group {
+            if let image = image {
+              Image(uiImage: image)
+                .centerCropped()
+            } else {
+              Text("Select an image picker")
+            }
+          }
           .frame(width: 200, height: 200)
-      }
-      
-      Button {
-        self.showImagePicker = true
-      } label: {
-        Text("Image Picker")
-      }
-      
-      Button {
-        self.showPhotoPicker = true
-      } label: {
-        Text("Photo Picker")
-      }
+          .background(Color.gray)
+          
+          Button {
+            self.showImagePicker = true
+          } label: {
+            Text("Old Image Picker")
+          }
+          
+          Button {
+            self.showPhotoPicker = true
+          } label: {
+            Text("New Photo Picker")
+          }
+          
+          Spacer()
+        }
+        .navigationTitle("Broken Image Pickers")
     }
     .sheet(isPresented: self.$showImagePicker) {
       ImagePicker(image: self.$image)
@@ -60,15 +78,15 @@ struct ContentView: View {
 }
 
 extension Image {
-    func centerCropped() -> some View {
-        GeometryReader { geo in
-            self
-            .resizable()
-            .scaledToFill()
-            .frame(width: geo.size.width, height: geo.size.height)
-            .clipped()
-        }
+  func centerCropped() -> some View {
+    GeometryReader { geo in
+      self
+        .resizable()
+        .scaledToFill()
+        .frame(width: geo.size.width, height: geo.size.height)
+        .clipped()
     }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
