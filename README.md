@@ -13,8 +13,8 @@ PHPickerViewController will display a message "Unable to Load Photos".
 Related Posts
 ------------
 
-Stack Overflow: https://stackoverflow.com/questions/69306179/phpickerviewcontroller-tapping-on-search-gets-error-unable-to-load-photos
-Apple dev forums: https://developer.apple.com/forums/thread/690802
+- Stack Overflow: https://stackoverflow.com/questions/69306179/phpickerviewcontroller-tapping-on-search-gets-error-unable-to-load-photos
+- Apple dev forums: https://developer.apple.com/forums/thread/690802
 
 If you have any ways to fix the errors then please let me know.
 
