@@ -67,6 +67,7 @@ When you enter into the search it will either crash out of the image picker or d
   
   func resultOnChange(_ result: PHPickerResult?) {
     result?.loadImage()
+      .receive(on: DispatchQueue.main)
       .compactMap { $0 }
       .sink { image = $0 }
       .store(in: &cancellables)
