@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5A0A478D26FE291600F51416 /* PHPickerResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0A478C26FE291600F51416 /* PHPickerResult.swift */; };
 		5A78187C26FE16FD003776B2 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A78187B26FE16FD003776B2 /* PhotoPicker.swift */; };
+		5ACF95F127008E9B00BFA316 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF95F027008E9B00BFA316 /* TextViewController.swift */; };
 		5AEDD36726FE12CB006314D8 /* BrokenImagePickersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEDD36626FE12CB006314D8 /* BrokenImagePickersApp.swift */; };
 		5AEDD36926FE12CB006314D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEDD36826FE12CB006314D8 /* ContentView.swift */; };
 		5AEDD36B26FE12CF006314D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AEDD36A26FE12CF006314D8 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		5A0A478C26FE291600F51416 /* PHPickerResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerResult.swift; sourceTree = "<group>"; };
 		5A78187B26FE16FD003776B2 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		5ACF95F027008E9B00BFA316 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		5AEDD36326FE12CB006314D8 /* BrokenImagePickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrokenImagePickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AEDD36626FE12CB006314D8 /* BrokenImagePickersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenImagePickersApp.swift; sourceTree = "<group>"; };
 		5AEDD36826FE12CB006314D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				5AEDD37426FE12E5006314D8 /* ImagePicker.swift */,
 				5A78187B26FE16FD003776B2 /* PhotoPicker.swift */,
 				5A0A478C26FE291600F51416 /* PHPickerResult.swift */,
+				5ACF95F027008E9B00BFA316 /* TextViewController.swift */,
 			);
 			path = BrokenImagePickers;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				5AEDD36926FE12CB006314D8 /* ContentView.swift in Sources */,
 				5AEDD36726FE12CB006314D8 /* BrokenImagePickersApp.swift in Sources */,
 				5A0A478D26FE291600F51416 /* PHPickerResult.swift in Sources */,
+				5ACF95F127008E9B00BFA316 /* TextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

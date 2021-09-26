@@ -12,6 +12,7 @@ import Combine
 struct ContentView: View {
   @State var showImagePicker = false
   @State var showPhotoPicker = false
+  @State var showMyTextView = false
   
   @State var image: UIImage?
   @State var photoPickerResult: PHPickerResult?
@@ -52,12 +53,21 @@ When you enter into the search it will either crash out of the image picker or d
           Text("New Photo Picker")
         }
         
+        Button {
+          self.showMyTextView = true
+        } label: {
+          Text("My Text View")
+        }
+        
         Spacer()
       }
       .navigationTitle("Broken Image Pickers")
     }
     .sheet(isPresented: self.$showImagePicker) {
       ImagePicker(image: self.$image)
+    }
+    .sheet(isPresented: self.$showMyTextView) {
+      MyTextView()
     }
     .sheet(isPresented: self.$showPhotoPicker) {
       PhotoPicker(photoPickerResult: self.$photoPickerResult)
